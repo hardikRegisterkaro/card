@@ -23,8 +23,18 @@ const Carousel = ({ reviews }: CarouselProps) => {
         nextEl: '.swiper-button-next'
       }}
       loop={true}
-      slidesPerView={2}
+      slidesPerView={2.15}
       spaceBetween={10}
+      slidesPerGroup={1}  // Changed back to 1 to fix sliding
+      watchSlidesProgress={true}
+      style={{ 
+        overflow: 'visible',
+        marginLeft: 0,
+        paddingLeft: 0
+      }}
+      centeredSlides={false}
+      speed={500}
+      initialSlide={0}
     >
       {reviews.map((review, index) => (
         <SwiperSlide key={index}>
@@ -36,7 +46,7 @@ const Carousel = ({ reviews }: CarouselProps) => {
           />
         </SwiperSlide>
       ))}
-      <div className="swiper-button-next">→</div>
+      <div className="swiper-button-next"></div>
     </Swiper>
   );
 };

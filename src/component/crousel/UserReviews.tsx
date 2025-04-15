@@ -12,7 +12,7 @@ const UserReviews = () => {
       rating: 4,
       text: "The team took time to understand our vision and delivered a sleek, professional site that not only looks great but also improved our conversion rates. Their design process was smooth, communication was clear, and they met all deadlines.",
       author: "Maxin Will",
-      role: "Product Manager"
+      role: " Manager"
     },
     {
       rating: 4,
@@ -24,7 +24,7 @@ const UserReviews = () => {
       rating: 4,
       text: "The team took time to understand our vision and delivered a sleek, professional site that not only looks great but also improved our conversion rates. Their design process was smooth, communication was clear, and they met all deadlines.",
       author: "Maxin Will",
-      role: "Product Manager"
+      role: "xmas Manager"
     }
   ];
 
