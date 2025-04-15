@@ -1,0 +1,80 @@
+.user-reviews {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+
+  h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+
+  .subtitle {
+    text-align: center;
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .trust-banner {
+    background: #f8f9fa;
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #333;
+      margin: 0;
+    }
+
+    .rating-overview {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      .average-rating {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #FFB800;
+      }
+
+      .stars {
+        color: #FFB800;
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(352.564px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .user-reviews {
+    padding: 1rem;
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    .trust-banner {
+      flex-direction: column;
+      text-align: center;
+      gap: 1rem;
+    }
+
+    .reviews-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+}

@@ -1,0 +1,97 @@
+.card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  position: relative;
+  width: 320.564px;
+  height: 400.857px;
+  
+  .card-content {
+    padding: 1.5rem;
+    height: calc(100% - 80px); // Adjust space for author section
+    display: flex;
+    flex-direction: column;
+    
+    .rating {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      margin-bottom: 1rem;
+      
+      .star {
+        color: #ddd;
+        font-size: 1.2rem;
+        
+        &.filled {
+          color: #FFB800;
+        }
+      }
+      
+      .rating-text {
+        margin-left: 0.5rem;
+        color: #666;
+        font-weight: 500;
+      }
+    }
+    
+    .review-text {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: #333;
+      flex-grow: 1;
+    }
+  }
+  
+  .author-section {
+    padding: 1.5rem;
+    position: relative;
+    background: white;
+    height: 80px; // Fixed height for author section
+    
+    .author-info {
+      display: flex;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+      
+      .avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #333;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        margin-right: 1rem;
+      }
+      
+      .details {
+        h3 {
+          color: #333;
+          margin: 0;
+          font-size: 1rem;
+          font-weight: 600;
+        }
+        
+        p {
+          color: #666;
+          margin: 0;
+          font-size: 0.85rem;
+          margin-top: 2px;
+        }
+      }
+    }
+    
+    .vector-bg {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 1;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
