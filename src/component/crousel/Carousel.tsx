@@ -25,7 +25,7 @@ const Carousel = ({ reviews }: CarouselProps) => {
       loop={true}
       slidesPerView={2.15}
       spaceBetween={10}
-      slidesPerGroup={1}  // Changed back to 1 to fix sliding
+      slidesPerGroup={1}  
       watchSlidesProgress={true}
       style={{ 
         overflow: 'visible',
