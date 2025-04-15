@@ -19,17 +19,19 @@ const UserReviews = () => {
 
   return (
     <div className="user-reviews">
-      <h1>What Users Say About Non Disclosure Agreement</h1>
-      <p className="subtitle">Reviews from professional and business who have used this document template</p>
-      
-      <div className="trust-banner">
-        <p>Know Why Millions of Customers Believe in Us !</p>
-        <div className="rating-overview">
-          <span className="average-rating">4.5</span>
-          <div className="stars">★★★★☆</div>
+      <div className='data-here'>
+        <h1>What Users Say About Non Disclosure Agreement</h1>
+        <p className="subtitle">Reviews from professional and business who have used this document template</p>
+        <p className="subtitle-2">Know Why Millions of Customers Believe in Us !</p>
+        <div className="trust-banner">
+          <div className="rating-overview">
+            <span className="average-rating">4.5</span>
+            <div className="stars">★★★★☆</div>
+          </div>
         </div>
       </div>
-      
+
+
       <div className="reviews-grid">
         {reviews.map((review, index) => (
           <Card
